@@ -1,0 +1,19 @@
+{
+    "Name": "Void",
+    "Description": "Does nothing.",
+    "Explanation": "This is a soundscape skeleton to get started.",
+    "Version": "1.0",
+    "Author": "Your Name",
+    "Email": "someone@example.com",
+    "Year": "2023",
+    "License": "Do what you want.",
+    "Credits": [],
+    "Cover": "void_cover.png",
+    "Parameter":
+    {
+        "Main": []
+    },
+    "ParameterMappings": [],
+    "NoteConfigs": [],
+    "PitchBendConfigs": []
+}

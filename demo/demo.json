@@ -1,0 +1,126 @@
+{
+    "Name": "Demo",
+    "Description": "This is a demo soundscape",
+    "Explanation": "This soundscape includes an oscillator, a state variable filter and a sampler controlled via sensor 1 and 2.",
+    "Version": "1.0",
+    "Author": "Henrik Langer",
+    "Email": "contact@instrumentsofthings.com",
+    "Year": "2023",
+    "License": "CC BY-NC-SA 4.0",
+    "Credits": [
+        "Pure Data Patch by Sven Miesner"
+    ],
+    "Cover": "demo_cover.png",
+    "Parameter":
+    {
+        "Noise": [
+        {
+            "Name": "Cutoff",
+            "PDParam": "noiseCutoff"
+        },
+        {
+            "Name": "Resonance",
+            "PDParam": "noiseReso"
+        },
+        {
+            "Name": "Level",
+            "PDParam": "noiseLevel"
+        }],
+        "Sampler": [
+        {
+            "Name": "Select Sample",
+            "PDParam": "sampleSelect"
+        }]
+    },
+    "ParameterMappings": [
+    {
+        "PDParam": "noiseCutoff",
+        "SensorId": 0,
+        "SlotIndex": 0,
+        "MidiChannel": 0,
+        "InputParam": 0,
+        "Controller": 16,
+        "Scale": 1.0,
+        "SlewLimiterShape": 0.5,
+        "SlewLimiterRise": 0.0,
+        "SlewLimiterFall": 0.0,
+        "InverseInputParam": false
+    },
+    {
+        "PDParam": "noiseReso",
+        "SensorId": 0,
+        "SlotIndex": 1,
+        "MidiChannel": 0,
+        "InputParam": 1,
+        "Controller": 17,
+        "Scale": 0.6,
+        "SlewLimiterShape": 0.5,
+        "SlewLimiterRise": 0.0,
+        "SlewLimiterFall": 0.0,
+        "InverseInputParam": false
+    },
+    {
+        "PDParam": "noiseLevel",
+        "SensorId": 0,
+        "SlotIndex": 6,
+        "MidiChannel": 0,
+        "InputParam": 6,
+        "Controller": 22,
+        "Scale": 1.5,
+        "SlewLimiterShape": 0.5,
+        "SlewLimiterRise": 0.1,
+        "SlewLimiterFall": 0.4,
+        "InverseInputParam": false
+    },
+    {
+        "PDParam": "sampleSelect",
+        "SensorId": 1,
+        "SlotIndex": 2,
+        "MidiChannel": 1,
+        "InputParam": 2,
+        "Controller": 18,
+        "Scale": 1.0,
+        "SlewLimiterShape": 0.5,
+        "SlewLimiterRise": 0.1,
+        "SlewLimiterFall": 0.4,
+        "InverseInputParam": false
+    }],
+    "NoteConfigs": [
+    {
+        "SensorId": 0,
+        "SlotIndex": 0,
+        "MidiChannel": 0,
+        "InputParamGate": 6,
+        "InputParamNote": 2,
+        "NoteMin": 36,
+        "NoteMax": 60,
+        "VelocityNoteOn": 127,
+        "VelocityNoteOff": 0,
+        "GateThreshold": 0.5,
+        "InverseParamGate": false,
+        "InverseParamNote": false
+    },
+    {
+        "SensorId": 1,
+        "SlotIndex": 0,
+        "MidiChannel": 1,
+        "InputParamGate": 6,
+        "InputParamNote": 2,
+        "NoteMin": 36,
+        "NoteMax": 36,
+        "VelocityNoteOn": 127,
+        "VelocityNoteOff": 0,
+        "GateThreshold": 0.3,
+        "InverseParamGate": false,
+        "InverseParamNote": false
+    }],
+    "PitchBendConfigs": [
+    {
+        "SensorId": 0,
+        "SlotIndex": 0,
+        "MidiChannel": 0,
+        "InputParam": 3,
+        "Scale": 1.0,
+        "InverseInputParam": false
+    }]
+}
